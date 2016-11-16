@@ -5,13 +5,14 @@ import javax.persistence.*;
 /**
  * Created by eduardm on 11/16/16.
  */
-@Entity(name = "Model")
+@Entity(name = "model")
 public class Model {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "model_id")
     private Long modelId;
+
     @Column(name = "model_name", unique = true)
     private String modelName;
 
