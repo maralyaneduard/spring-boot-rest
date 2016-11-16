@@ -1,28 +1,16 @@
 package com.em.auto.DTO;
 
-import com.em.auto.entity.Auto;
-
-import javax.persistence.*;
 import java.util.Set;
 
 /**
  * Created by eduardm on 11/16/16.
  */
-@Entity(name = "make")
 public class MakeDTO {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "make_id")
+
     private Long makeId;
-
-    @Column(name = "make_name", unique = true)
     private String makeName;
-
-    @OneToMany(mappedBy = "make", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    private Set<Model> models;
-
-    @OneToMany(mappedBy = "make", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    private Set<Auto> autos;
+    private Set<ModelDTO> models;
+    private Set<AutoDTO> autos;
 
     public MakeDTO() {
     }
@@ -43,19 +31,19 @@ public class MakeDTO {
         this.makeName = makeName;
     }
 
-    public Set<Model> getModels() {
+    public Set<ModelDTO> getModels() {
         return models;
     }
 
-    public void setModels(Set<Model> models) {
+    public void setModels(Set<ModelDTO> models) {
         this.models = models;
     }
 
-    public Set<Auto> getAutos() {
+    public Set<AutoDTO> getAutos() {
         return autos;
     }
 
-    public void setAutos(Set<Auto> autos) {
+    public void setAutos(Set<AutoDTO> autos) {
         this.autos = autos;
     }
 }
