@@ -9,6 +9,8 @@ import javax.persistence.*;
  */
 @Entity(name = "auto")
 public class Auto {
+
+    @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "auto_id")
     private Long autoId;

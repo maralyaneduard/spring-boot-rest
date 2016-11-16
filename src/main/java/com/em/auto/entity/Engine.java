@@ -8,6 +8,8 @@ import java.util.Set;
  */
 @Entity(name = "engine")
 public class Engine {
+
+    @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "engine_id")
     private Long engineId;
