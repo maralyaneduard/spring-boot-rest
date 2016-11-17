@@ -12,7 +12,7 @@ import java.util.List;
  * Created by eduardm on 11/16/16.
  */
 @RestController
-@RequestMapping("/autos")
+@RequestMapping("/engines")
 public interface EngineController {
 
     /**
@@ -22,7 +22,7 @@ public interface EngineController {
      * @return
      */
     @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
-    ResponseEntity<EngineDTO> save(@RequestBody AutoDTO engineDto);
+    ResponseEntity<EngineDTO> save(@RequestBody EngineDTO engineDto);
 
     /**
      * endPoint invokes engineService for getting list of all engineDto objects
