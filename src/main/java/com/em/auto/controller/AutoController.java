@@ -39,4 +39,13 @@ public interface AutoController {
      */
     @RequestMapping(value = "/{autoDtoId}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     ResponseEntity<AutoDTO> findOne(@PathVariable(value = "autoDtoId") Long autoDtoId);
+
+    /**
+     * endPoint invokes autoService for deleting auto by autoId
+     *
+     * @param autoId
+     * @return
+     */
+    @RequestMapping(value = "/{autoId}", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_VALUE)
+    ResponseEntity<AutoDTO> delete(@PathVariable(value = "autoId") Long autoId);
 }

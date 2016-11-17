@@ -35,4 +35,13 @@ public interface AutoService {
      * @throws SQLDataException
      */
     AutoDTO findOne(Long autoDtoId) throws SQLDataException;
+
+    /**
+     * method deletes auto by autoId
+     *
+     * @param autoId
+     * @return
+     * @throws SQLDataException
+     */
+    boolean delete(Long autoId) throws SQLDataException;
 }

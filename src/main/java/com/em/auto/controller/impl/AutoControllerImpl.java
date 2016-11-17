@@ -64,4 +64,18 @@ public class AutoControllerImpl implements AutoController {
             return new ResponseEntity<AutoDTO>(HttpStatus.NOT_FOUND);
         }
     }
+
+    @Override
+    public ResponseEntity delete(@PathVariable(value = "autoId") Long autoId) {
+        try {
+            AutoDTO auto = autoService.findOne(autoId);
+            if (auto != null && autoService.delete(autoId)) {
+                return new ResponseEntity(HttpStatus.OK);
+            }
+            return new ResponseEntity(HttpStatus.NOT_FOUND);
+        } catch (SQLDataException ex) {
+            LOGGER.error("[AutoControllerImpl][delete] unable to find auto object by autoId : [{}]", autoId, ex.getMessage());
+            return new ResponseEntity(HttpStatus.NOT_FOUND);
+        }
+    }
 }

@@ -20,7 +20,7 @@ public class Engine {
     @Column(name = "engine_cc")
     private Double engineCc;
 
-    @OneToMany(mappedBy = "engine", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "engine", fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)
     private Set<Auto> autos;
 
     public Engine() {
