@@ -5,7 +5,6 @@ import com.em.auto.repository.UserRepository;
 import com.em.auto.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.sql.SQLDataException;
 import java.util.List;
 
