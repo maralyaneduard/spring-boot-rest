@@ -39,7 +39,7 @@ public class EngineServiceImpl implements EngineService{
     }
 
     @Override
-    public EngineDTO findByCC(Integer engineCc) throws SQLDataException {
+    public EngineDTO findByCC(Double engineCc) throws SQLDataException {
         return null;
     }
 }

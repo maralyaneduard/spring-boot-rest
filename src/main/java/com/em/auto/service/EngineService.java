@@ -52,5 +52,5 @@ public interface EngineService {
      * @return
      * @throws SQLDataException
      */
-    EngineDTO findByCC(Integer engineCc) throws SQLDataException;
+    EngineDTO findByCC(Double engineCc) throws SQLDataException;
 }

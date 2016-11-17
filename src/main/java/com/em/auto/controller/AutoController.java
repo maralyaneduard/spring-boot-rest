@@ -41,13 +41,4 @@ public interface AutoController {
      */
     @RequestMapping(value = "/{autoDtoId}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     ResponseEntity<AutoDTO> findOne(@PathVariable(value = "autoDtoId") Long autoDtoId);
-
-    /**
-     * endPoint invokes autoService for getting autoDto by autoName
-     *
-     * @param autoName
-     * @return
-     */
-    @RequestMapping(value = "/auto-name/{autoName}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    ResponseEntity<AutoDTO> findByAutoName(@PathVariable(value = "autoName") String autoName);
 }
