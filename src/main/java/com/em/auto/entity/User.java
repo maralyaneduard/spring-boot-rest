@@ -17,7 +17,7 @@ public class User {
     private String userName;
 
     @OneToMany(mappedBy = "user", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    private Auto auto;
+    private Set<Auto> autos;
 
     @OneToMany(mappedBy = "user", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private Set<Comment> comments;
@@ -41,12 +41,12 @@ public class User {
         this.userName = userName;
     }
 
-    public Auto getAuto() {
-        return auto;
+    public Set<Auto> getAutos() {
+        return autos;
     }
 
-    public void setAuto(Auto auto) {
-        this.auto = auto;
+    public void setAutos(Set<Auto> autos) {
+        this.autos = autos;
     }
 
     public Set<Comment> getComments() {

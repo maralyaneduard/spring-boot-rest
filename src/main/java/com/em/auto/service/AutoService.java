@@ -8,6 +8,7 @@ import java.util.List;
 /**
  * Created by eduardm on 11/16/16.
  */
+
 public interface AutoService {
     /**
      * method saves autoDto object
@@ -34,13 +35,4 @@ public interface AutoService {
      * @throws SQLDataException
      */
     AutoDTO findOne(Long autoDtoId) throws SQLDataException;
-
-    /**
-     * method returns autoDto object by autoName
-     *
-     * @param autoName
-     * @return
-     * @throws SQLDataException
-     */
-    AutoDTO findByAutoName(String autoName) throws SQLDataException;
 }

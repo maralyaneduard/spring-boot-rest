@@ -5,6 +5,7 @@ import com.em.auto.repository.UserRepository;
 import com.em.auto.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import java.sql.SQLDataException;
 import java.util.List;
 
@@ -12,7 +13,7 @@ import java.util.List;
  * Created by eduardm on 11/16/16.
  */
 @Service
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserRepository userRepository;

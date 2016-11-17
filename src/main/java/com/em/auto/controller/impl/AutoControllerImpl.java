@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 
@@ -18,11 +19,13 @@ import java.util.List;
  * Created by eduardm on 11/17/16.
  */
 
+@Component
 public class AutoControllerImpl implements AutoController {
 
     private final static Logger LOGGER = LoggerFactory.getLogger(AutoController.class);
     @Autowired
     private AutoService autoService;
+
 
     @Override
     public ResponseEntity<AutoDTO> save(@RequestBody AutoDTO autoDto) {

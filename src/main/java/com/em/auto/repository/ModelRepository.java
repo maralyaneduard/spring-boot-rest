@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 /**
  * Created by eduardm on 11/16/16.
  */
-public interface ModelRepository extends JpaRepository<Model,Long> {
+public interface ModelRepository extends JpaRepository<Model, Long> {
 }

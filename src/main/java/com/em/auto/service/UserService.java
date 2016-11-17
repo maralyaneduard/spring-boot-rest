@@ -1,6 +1,5 @@
 package com.em.auto.service;
 
-import com.em.auto.DTO.AutoDTO;
 import com.em.auto.DTO.UserDTO;
 
 import java.sql.SQLDataException;

@@ -1,16 +1,14 @@
 package com.em.auto.controller.impl;
 
-import com.em.auto.DTO.CommentDTO;
-import com.em.auto.DTO.EngineDTO;
 import com.em.auto.DTO.MakeDTO;
 import com.em.auto.controller.MakeController;
-import com.em.auto.service.EngineService;
 import com.em.auto.service.MakeService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 
@@ -20,6 +18,7 @@ import java.util.List;
 /**
  * Created by eduardm on 11/17/16.
  */
+@Component
 public class MakeControllerImpl implements MakeController {
 
     private final static Logger LOGGER = LoggerFactory.getLogger(MakeController.class);

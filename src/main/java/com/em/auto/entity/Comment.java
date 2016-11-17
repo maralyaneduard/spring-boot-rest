@@ -15,7 +15,7 @@ public class Comment {
     @Column(name = "comment_id")
     private Long commentId;
 
-    @Type(type="text")
+    @Type(type = "text")
     @Column(name = "comment_text")
     private String commentText;
 

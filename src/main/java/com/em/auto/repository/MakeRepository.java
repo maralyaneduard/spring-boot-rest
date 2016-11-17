@@ -8,5 +8,5 @@ import org.springframework.stereotype.Repository;
  * Created by eduardm on 11/16/16.
  */
 @Repository
-public interface MakeRepository extends JpaRepository<Make,Long> {
+public interface MakeRepository extends JpaRepository<Make, Long> {
 }

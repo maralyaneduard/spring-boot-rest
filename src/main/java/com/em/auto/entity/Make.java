@@ -19,9 +19,6 @@ public class Make {
     @OneToMany(mappedBy = "make", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private Set<Model> models;
 
-    @OneToMany(mappedBy = "make", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    private Set<Auto> autos;
-
     public Make() {
     }
 
@@ -47,13 +44,5 @@ public class Make {
 
     public void setModels(Set<Model> models) {
         this.models = models;
-    }
-
-    public Set<Auto> getAutos() {
-        return autos;
-    }
-
-    public void setAutos(Set<Auto> autos) {
-        this.autos = autos;
     }
 }

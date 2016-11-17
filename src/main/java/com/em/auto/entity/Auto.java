@@ -30,7 +30,7 @@ public class Auto {
     @Column(name = "auto_price")
     private Double autoPrice;
 
-    @Type(type="text")
+    @Type(type = "text")
     @Column(name = "auto_description")
     private String autoDescription;
 

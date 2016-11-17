@@ -8,5 +8,5 @@ import org.springframework.stereotype.Repository;
  * Created by eduardm on 11/16/16.
  */
 @Repository
-public interface AutoRepository  extends JpaRepository<Auto,Long> {
+public interface AutoRepository extends JpaRepository<Auto, Long> {
 }

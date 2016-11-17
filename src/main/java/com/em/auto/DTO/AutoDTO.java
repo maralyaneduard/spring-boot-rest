@@ -6,9 +6,9 @@ package com.em.auto.DTO;
 public class AutoDTO {
 
     private Long autoId;
-    private ModelDTO modelDto;
-    private EngineDTO engineDto;
-    private UserDTO userDto;
+    private ModelDTO model;
+    private EngineDTO engine;
+    private UserDTO user;
     private Double autoPrice;
     private String autoDescription;
     private Integer autoRating;
@@ -24,28 +24,28 @@ public class AutoDTO {
         this.autoId = autoId;
     }
 
-    public ModelDTO getModelDto() {
-        return modelDto;
+    public ModelDTO getModel() {
+        return model;
     }
 
-    public void setModelDto(ModelDTO modelDto) {
-        this.modelDto = modelDto;
+    public void setModel(ModelDTO model) {
+        this.model = model;
     }
 
-    public EngineDTO getEngineDto() {
-        return engineDto;
+    public EngineDTO getEngine() {
+        return engine;
     }
 
-    public void setEngineDto(EngineDTO engineDto) {
-        this.engineDto = engineDto;
+    public void setEngine(EngineDTO engine) {
+        this.engine = engine;
     }
 
-    public UserDTO getUserDto() {
-        return userDto;
+    public UserDTO getUser() {
+        return user;
     }
 
-    public void setUserDto(UserDTO userDto) {
-        this.userDto = userDto;
+    public void setUser(UserDTO user) {
+        this.user = user;
     }
 
     public Double getAutoPrice() {

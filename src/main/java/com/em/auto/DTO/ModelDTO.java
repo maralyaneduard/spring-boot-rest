@@ -1,7 +1,5 @@
 package com.em.auto.DTO;
 
-import javax.persistence.*;
-
 /**
  * Created by eduardm on 11/16/16.
  */
@@ -13,21 +11,27 @@ public class ModelDTO {
 
     public ModelDTO() {
     }
+
     public Long getModelId() {
         return modelId;
     }
+
     public void setModelId(Long modelId) {
         this.modelId = modelId;
     }
+
     public String getModelName() {
         return modelName;
     }
+
     public void setModelName(String modelName) {
         this.modelName = modelName;
     }
+
     public MakeDTO getMake() {
         return makeDto;
     }
+
     public void setMake(MakeDTO makeDto) {
         this.makeDto = makeDto;
     }

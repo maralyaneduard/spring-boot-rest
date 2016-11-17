@@ -1,6 +1,7 @@
 package com.em.auto.service.impl;
 
 import com.em.auto.DTO.AutoDTO;
+import com.em.auto.converter.AutoConverter;
 import com.em.auto.repository.AutoRepository;
 import com.em.auto.service.AutoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,21 +21,16 @@ public class AutoServiceImpl implements AutoService {
 
     @Override
     public AutoDTO save(AutoDTO autoDto) throws SQLDataException {
-        return null;
+        return AutoConverter.fromAuto(autoRepository.save(AutoConverter.fromAutoDto(autoDto)));
     }
 
     @Override
     public List<AutoDTO> findAll() throws SQLDataException {
-        return null;
+        return AutoConverter.fromAutoList(autoRepository.findAll());
     }
 
     @Override
     public AutoDTO findOne(Long autoDtoId) throws SQLDataException {
-        return null;
-    }
-
-    @Override
-    public AutoDTO findByAutoName(String autoName) throws SQLDataException {
-        return null;
+        return AutoConverter.fromAuto(autoRepository.findOne(autoDtoId));
     }
 }

@@ -1,7 +1,5 @@
 package com.em.auto.controller;
 
-import com.em.auto.DTO.AutoDTO;
-import com.em.auto.DTO.ModelDTO;
 import com.em.auto.DTO.UserDTO;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
